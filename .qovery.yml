@@ -1,7 +1,11 @@
+---
 application:
-  name: myApp
-  project: myProject
-  cpu: 1
-  dockerfile: Dockerfile
-  publicly_accessible: true
-  port: 8080
+  name: "demo-deploy-qovery"
+  project: "first-frontity-demo"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-demo-deploy-qovery"
+  routes:
+  - application_name: "demo-deploy-qovery"
+    paths:
+    - "/*"
